@@ -28,7 +28,7 @@ int main(){
 			if(mce){
 				flag = 0;
 			}
-		}
+		}/*
 		else{
 			if(mcs){
 				flag = 1;
