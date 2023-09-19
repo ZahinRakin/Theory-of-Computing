@@ -31,16 +31,19 @@ int main() {
         }
     }
 
-    for(int i = 0; i < MAX_STATES; i++){
-        for(int j = 0; j < i; j++){
-            if(i == final_state || j == final_state){
-                mat[i][j] = true;
-            }
+    for(int iteration = 0; iteration <= 2; iteration++){
+        for(int i = 1; i < MAX_STATES; i++){
+            for(int j = 0; j < i; j++){
+                if(i == final_state || j == final_state){
+                    mat[i][j] = true;
+                }
 
-            if(!mat[i][j]){
-                for(int k = 0; k < MAX_SYMBOLL; k++){
-                    if((mat[dfa_trans[i][k]][dfa_trans[j][k]]) || (mat[dfa_trans[j][k]][dfa_trans[i][k]])){
-                        mat[i][j] = true;
+                if(!mat[i][j]){
+                    for(int k = 0; k < MAX_SYMBOLL; k++){
+                        if((mat[dfa_trans[i][k]][dfa_trans[j][k]]) || (mat[dfa_trans[j][k]][dfa_trans[i][k]])){
+                            mat[i][j] = true;
+                            break;
+                        }
                     }
                 }
             }
