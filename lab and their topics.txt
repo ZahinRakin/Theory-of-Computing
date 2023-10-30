@@ -1,0 +1,10 @@
+lab-02 = DFA.
+lab-03 = NFA.
+lab-04 = NFA to DFA.
+lab-05 = Comment Extractor.
+lab-06 = DFA to Regex.
+lab-07 = DFA minimization Myhill Nerode.
+lab-08 = pumping lemma.
+lab-09 = CFG for Palindrome.
+lab-10 = CFG for Palindrome (leftmost & rightmost).
+lab-11 = CFG for Palindrome (ambiguous grammer).
