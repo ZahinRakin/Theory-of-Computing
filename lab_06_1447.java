@@ -1,6 +1,7 @@
+//dfa to regex.
 import java.util.Scanner;
 
-public class DfaToRegex{
+public class lab_06_1447{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int numOfStates;
