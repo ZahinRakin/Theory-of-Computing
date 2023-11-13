@@ -8,3 +8,4 @@ lab-08 = pumping lemma.
 lab-09 = CFG for Palindrome.
 lab-10 = CFG for Palindrome (leftmost & rightmost).
 lab-11 = CFG for Palindrome (ambiguous grammer).
+lab-12 = PDA
