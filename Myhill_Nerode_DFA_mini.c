@@ -67,49 +67,50 @@ int main(){
 
 DFA init_dfa(){
     DFA dfa;
-    // printf("states: ");
-    // scanf("%d",&dfa.nos);
-    // printf("start: ");
-    // scanf("%d",&dfa.start);
-    // printf("number of end states: ");
-    // scanf("%d",&dfa.nof);
-    // printf("end states: ");
-    // for(int i = 0; i < dfa.nof; i++){
-        // int temp;
-    //     scanf("%d",&temp);
-    //      getchar();
-    //      dfa.end[temp] = true;
-    // }
-    // printf("Transition table:\n");
-    // for(int i = 0; i < dfa.nos; i++){
-    //     for(int j = 0; j < 2; j++){
-    //         printf("delta(q%d,a%d): ",i,j);
-    //         scanf("%d",&dfa.delta[i][j]);
-    //     }
-    // }
+    printf("states: ");
+    
+    scanf("%d",&dfa.nos);
+    printf("start: ");
+    scanf("%d",&dfa.start);
+    printf("number of end states: ");
+    scanf("%d",&dfa.nof);
+    printf("end states: ");
+    for(int i = 0; i < dfa.nof; i++){
+        int temp;
+        scanf("%d",&temp);
+         getchar();
+         dfa.end[temp] = true;
+    }
+    printf("Transition table:\n");
+    for(int i = 0; i < dfa.nos; i++){
+        for(int j = 0; j < 2; j++){
+            printf("delta(q%d,a%d): ",i,j);
+            scanf("%d",&dfa.delta[i][j]);
+        }
+    }
     //the commented part are for custom dfa.
-    dfa.nos = 8;
-    dfa.start = 0;
-    dfa.nof = 1;
+    // dfa.nos = 8;
+    // dfa.start = 0;
+    // dfa.nof = 1;
     
-    dfa.end[3] = true;
+    // dfa.end[3] = true;
     
-    dfa.delta[0][0] = 1;
-    dfa.delta[0][1] = 0;
-    dfa.delta[1][0] = 0;
-    dfa.delta[1][1] = 2;
-    dfa.delta[2][0] = 3;
-    dfa.delta[2][1] = 1;
-    dfa.delta[3][0] = 3;
-    dfa.delta[3][1] = 0;
-    dfa.delta[4][0] = 3;
-    dfa.delta[4][1] = 5;
-    dfa.delta[5][0] = 6;
-    dfa.delta[5][1] = 4;
-    dfa.delta[6][0] = 5;
-    dfa.delta[6][1] = 6;
-    dfa.delta[7][0] = 6;
-    dfa.delta[7][1] = 3;
+    // dfa.delta[0][0] = 1;
+    // dfa.delta[0][1] = 0;
+    // dfa.delta[1][0] = 0;
+    // dfa.delta[1][1] = 2;
+    // dfa.delta[2][0] = 3;
+    // dfa.delta[2][1] = 1;
+    // dfa.delta[3][0] = 3;
+    // dfa.delta[3][1] = 0;
+    // dfa.delta[4][0] = 3;
+    // dfa.delta[4][1] = 5;
+    // dfa.delta[5][0] = 6;
+    // dfa.delta[5][1] = 4;
+    // dfa.delta[6][0] = 5;
+    // dfa.delta[6][1] = 6;
+    // dfa.delta[7][0] = 6;
+    // dfa.delta[7][1] = 3;
     return dfa;
 }
 
