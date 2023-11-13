@@ -1,6 +1,7 @@
+//dfa to regex.
 import java.util.Scanner;
 
-public class DfaToRegex{
+public class lab_06_1447{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int numOfStates;
@@ -24,7 +25,6 @@ public class DfaToRegex{
             }
         }
 
-        //understood what he wanted to do. Rij(0) loading complete.
         for(int i = 0; i < numOfStates; i++){
             for(int j = 0; j < numOfStates; j++){
                 int flag = 0;
@@ -52,12 +52,14 @@ public class DfaToRegex{
         }
 
         //printing the question ans : a.
+        System.out.println("\na)");
         for(int i = 0; i < numOfStates; i++){
             for(int j = 0; j < numOfStates; j++){
                 System.out.printf("regex[0][%d][%d] = %s\n",i+1,j+1,regex[0][i][j]);
             }
         }
         //loading the b & c's ans.
+        System.out.println("\nb)");
         for(int k = 1; k < numOfStates; k++){
             for(int i = 0; i < numOfStates; i++){
                 for(int j = 0; j < numOfStates; j++){
@@ -65,6 +67,7 @@ public class DfaToRegex{
                 }
             }
         }
+        System.out.println("\nc)");
         //printing the b & c 's ans
         for(int k = 1; k < numOfStates; k++){
             for(int i = 0; i < numOfStates; i++){
